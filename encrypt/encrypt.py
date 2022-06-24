@@ -1,5 +1,5 @@
-from setuptools import setup
 from Cython.Build import cythonize
+from setuptools import setup
 
 
 def encrypt():
@@ -9,5 +9,5 @@ def encrypt():
     setup(ext_modules=cythonize(file_path_list))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     encrypt()

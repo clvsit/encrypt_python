@@ -21,8 +21,8 @@ Name | Type | Description
 `-d` or `--dir_path` | str | The directory of the python script to be encrypted 
 `-f` or `--filter` | str or List[str] | Filtering rules, as strings, can specify a single regular expression or the path to the rule file; as lists, specify multiple regular expressions. **When the path of a script file meets the filter criteria, the script file will not be encrypted**.
 `-o` or `--output` | str | Specify the output directory of the encrypted script file
-`-p` or `--is_replace` | bool |  Whether to replace the original directory, default is false, when set to true, it will automatically move the encrypted files in build to the dir_path directory and copy the original script files to the `dir_path + time.time()` directory as a backup
-`-r` or `--is_recurrent` | bool | Whether to recursively find all script files in the dir_path directory, default is false.
+`-i` or `--inplace` | bool |  Whether to replace the original directory, default is false, when set to true, it will automatically move the encrypted files in build to the dir_path directory and copy the original script files to the `dir_path + time.time()` directory as a backup
+`-r` or `--recursive` | bool | Whether to recursively find all script files in the dir_path directory, default is false.
 
 If the `--filter` parameter is passed in as a file path, the file will have the following format:
 
