@@ -1,5 +1,5 @@
-from Cython.Build import cythonize
 from setuptools import setup
+from Cython.Build import cythonize
 
 
 def encrypt():

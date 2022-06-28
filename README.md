@@ -11,7 +11,7 @@ $ python setup.py install
 First, go to the root directory of your project, then enter the following command at the command line.
 
 ```bash
-encrypt -d core -f .*\.pyc -r true -p true
+encrypt -d core -f .*\.pyc -r -i
 ```
 
 Where encrypt is the main body of the command, followed by various configuration parameters.
